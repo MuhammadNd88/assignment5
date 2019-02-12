@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" name="quizForm">
+      <label for="q1">Q.1: What is name of the capital of Canada?</label>
+
+      <input type="radio" id="radio1" name="radio1"/>Toronto
+      <input type="radio" id="radio2" name='radio1' />Ottawa
+      <p style="" id="radioMsg">Select the input</p>
+      <hr />
+      <label for="q1">Q.2: How many continents in the world?</label>
+
+      <select name="option" id="" required>
+        <option value="Enter Your value"></option>
+
+        <option value="option 1">5</option>
+        <option value="option 2">7</option>
+        <option value="option 3">6</option>
+        <option value="option 4">9</option>
+      </select>
+      <p>Select the input</p>
+      <hr />
+      <label for="q1"
+        >Q.3: Select two cities have more population in Canada?</label
+      >
+      <input type="checkbox" />Vancour <input type="checkbox" />calgary
+      <input type="checkbox" />Toronto <input type="checkbox" />Montreal
+
+      <p>Select the input</p>
+      <hr />
+      <label for="q1">Q.4: write the of highiest mountain in the world?</label>
+      <input type="text" name='text' id='text' />
+      <p name="textMsg" style="display: none;" id="textMsg"> Answer is correct</p>
+      <p name="textMsg1" style="display: none;" id="textMsg1">Try Again</p>
+    
+        
+
+      <button name="button" id="submitbutton">Submit</button>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!-- <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Radio button: full validation example with javascript</title>
+  <script>
+      function send() {
+          var genders = document.getElementsByName("gender");
+          if (genders[0].checked == true) {
+              alert("Your gender is male");
+          } else if (genders[1].checked == true) {
+              alert("Your gender is female");
+          } else {
+              // no checked
+              var msg = '<span style="color:red;">You must select your gender!</span><br /><br />';
+              document.getElementById('msg').innerHTML = msg;
+              return false;
+          }
+          return true;
+      }
+
+      function reset_msg() {
+          document.getElementById('msg').innerHTML = '';
+      }
+  </script>
+</head>
+<body>
+  <form action="" method="POST">
+      <label>Gender:</label>
+      <br />
+      <input type="radio" name="gender" value="m" onclick="reset_msg();" />Male
+      <br />
+      <input type="radio" name="gender" value="f" onclick="reset_msg();" />Female
+      <br />
+      <div id="msg"></div>
+      <input type="submit" value="send>>" onclick="return send();" />
+  </form>
+</body>
+</html> -->
